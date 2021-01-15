@@ -103,3 +103,7 @@ const init = () => {
 
 // Function call to initialize app
 init();
+
+
+// license for github based on username and repo
+// https://img.shields.io/github/license/corycalaway/readme-generator
