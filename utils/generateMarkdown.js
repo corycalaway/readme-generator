@@ -35,13 +35,18 @@ ${projectDescription}
 * [License Information](#license-information)
 
 ## Installation Instructions
+${projectInstallation}
 
 ## Usage Information
+${projectUsage}
 
 ## Contribution Guidelines
+${projectContribution}
 
 ## Test Instructions
+${testInstructions}
 
-## License Information`
+## License Information
+${license}`
 }
 

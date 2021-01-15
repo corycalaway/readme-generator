@@ -122,3 +122,6 @@ init();
 
 // create a LICENSE form to input license information based upon selection of license to be used
 // create a readme with information
+
+//https://img.shields.io/badge/https://img.shields.io/badge/license-MIT-brightgreen
+//https://img.shields.io/badge/License-MIT-brightgreen
