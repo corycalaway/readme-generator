@@ -1,6 +1,7 @@
 // allows use of nodes inquirer
 const inquirer = require('inquirer')
-
+const generateMarkdown = require('./utils/generateMarkdown')
+const createReadme = require('./utils/createFiles')
 // TODO: Create an array of questions for user input
 // questions to generate readme
 const questions = () => {
@@ -97,13 +98,21 @@ function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
 const init = () => {
-    questions();
-
+    questions()
+    .then(createReadme)
 }
 
-// Function call to initialize app
 init();
+// Function call to initialize app
+// init()
+//     .then(pageReadme => {
+//         return createReadme(pageReadme)
+//     })
 
 
 // license for github based on username and repo
 // https://img.shields.io/github/license/corycalaway/readme-generator
+
+
+// create a LICENSE form to input license information based upon selection of license to be used
+// create a readme with information
