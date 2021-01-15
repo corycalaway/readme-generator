@@ -19,8 +19,29 @@ function renderLicenseSection(license) {}
 // `;
 // }
 
-const generateMarkdown = () => {
-    return 'hi'
+module.exports = (generateMarkdown) => {
+    console.log(generateMarkdown)
+    const { projectTitle, projectDescription, projectInstallation, projectUsage, projectContribution, testInstructions, license} = generateMarkdown;
+    return `# ${projectTitle}
+    
+## Description
+${projectDescription}
+    
+## Table of Contents
+* [Installation Instructions](#installation-instructions)
+* [Usage Information](#usage-information)
+* [Contribution Guidelines](#contribution-guidelines)
+* [Test Instructions](#test-instructions)
+* [License Information](#license-information)
+
+## Installation Instructions
+
+## Usage Information
+
+## Contribution Guidelines
+
+## Test Instructions
+
+## License Information`
 }
 
-module.exports = generateMarkdown;
