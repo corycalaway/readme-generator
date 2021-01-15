@@ -14,11 +14,13 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(questionsData) {
-  return `# ${questionsData.title}
-`;
+// function generateMarkdown(questionsData) {
+//   return `# ${questionsData.title}
+// `;
+// }
+
+const generateMarkdown = () => {
+    return 'hi'
 }
-
-
 
 module.exports = generateMarkdown;

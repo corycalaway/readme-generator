@@ -2,9 +2,10 @@
 const fs = require('fs');
 
 // creates Readme file
-const createReadme = () => {
+const createReadme = fileContent => {
     return new Promise((resolve, reject) => {
-    fs.writeFile('./src/README.md', 'ctest', err => {
+        // uses data from generate markdown page as filecontent
+    fs.writeFile('./src/README.md', fileContent, err => {
         // if there's an error, reject the Promise and send the error to the Promise's `.catch()` method
         if (err) {
           reject(err);

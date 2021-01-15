@@ -1,7 +1,7 @@
 // allows use of nodes inquirer
 const inquirer = require('inquirer')
 const generateMarkdown = require('./utils/generateMarkdown')
-const createReadme = require('./utils/createFiles')
+const createFiles = require('./utils/createFiles')
 // TODO: Create an array of questions for user input
 // questions to generate readme
 const questions = () => {
@@ -99,7 +99,13 @@ function writeToFile(fileName, data) {}
 // TODO: Create a function to initialize app
 const init = () => {
     questions()
-    .then(createReadme)
+    .then(markdownData => {
+        return generateMarkdown(markdownData);
+    })
+    .then(writeData => {
+        return createFiles(writeData)
+    })    
+    
 }
 
 init();
