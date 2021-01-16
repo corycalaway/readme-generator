@@ -2,6 +2,14 @@
 const fs = require('fs');
 const {mitLicenseData, agplv3LicenseData, gplv3LicenseData, lgplv3LicenseData, mozillaLicenseData, apacheLicenseData, boosLicenseData, unlicenseLicenseData} = require('./licenseIndex')
 const {createReadme, createLicense} = require('./createFiles');
+//const choosealicenseList = require('choosealicense-list')
+const spdxLicenseList = require('spdx-license-list/full');
+const agplv3License = require('spdx-license-list/licenses/AGPL-3.0-or-later')
+const gplv3License = require('spdx-license-list/licenses/GPL-3.0-or-later')
+const lgplv3License = require('spdx-license-list/licenses/LGPL-3.0-or-later')
+const mplLicense = require('spdx-license-list/licenses/MPL-2.0')
+const apacheLicense = require('spdx-license-list/licenses/Apache-2.0')
+const boostLicense = require('spdx-license-list/licenses/BSL-1.0')
 
 // const testingIndex = require('./licenseIndex')
 
@@ -28,35 +36,36 @@ renderLicenseSection = license => {
     if(!license) {
         return "";
     } else if (license === 'MIT_License') {
-        createLicense(mitLicenseData())
+        createLicense(spdxLicenseList.MIT.licenseText)
         return mitLicenseData()
 
     } else if (license === 'GNU_AGPLv3') {
-        createLicense(agplv3LicenseData())
+       // createLicense(choosealicenseList.AGPL.body)
+       createLicense(agplv3License.licenseText)
         return agplv3LicenseData()
 
     } else if (license === 'GNU_GPLv3') {
-        createLicense(gplv3LicenseData())
+        createLicense(gplv3License.licenseText)
         return gplv3LicenseData()
 
     } else if (license === 'GNU_LGPLv3') {
-        createLicense(lgplv3LicenseData())
+        createLicense(lgplv3License.licenseText)
         return lgplv3LicenseData()
 
     } else if (license === 'Mozilla_Public_License_2.0') {
-        createLicense(mozillaLicenseData())
+        createLicense(mplLicense.licenseText)
         return mozillaLicenseData()
 
     } else if (license === 'Apache_2.0') {
-        createLicense(apacheLicenseData())
+        createLicense(apacheLicense.licenseText)
         return apacheLicenseData()
 
     } else if (license === 'Boost_Software_License_1.0') {
-        createLicense(boosLicenseData())
+        createLicense(boostLicense.licenseText)
         return boosLicenseData()
 
     } else {
-        createLicense(unlicenseLicenseData())
+        createLicense(spdxLicenseList.Unlicense.licenseText)
         return unlicenseLicenseData()
     }
 }
@@ -139,3 +148,4 @@ Licensed under the [${license}](LICENSE)`
 // create license / write maybe copy
 // create file to hold 
 
+//https://www.npmjs.com/package/choosealicense-list

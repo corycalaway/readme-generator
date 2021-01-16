@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/corycalaway/readme-generator#readme",
   "dependencies": {
-    "inquirer": "^7.3.3"
+    "choosealicense-list": "^1.2.0",
+    "inquirer": "^7.3.3",
+    "spdx-license-list": "^6.3.0"
   }
 }
