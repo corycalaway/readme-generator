@@ -30,20 +30,33 @@ renderLicenseSection = license => {
     } else if (license === 'MIT_License') {
         createLicense(mitLicenseData())
         return mitLicenseData()
+
     } else if (license === 'GNU_AGPLv3') {
         createLicense(agplv3LicenseData())
         return agplv3LicenseData()
+
     } else if (license === 'GNU_GPLv3') {
+        createLicense(gplv3LicenseData())
         return gplv3LicenseData()
+
     } else if (license === 'GNU_LGPLv3') {
+        createLicense(lgplv3LicenseData())
         return lgplv3LicenseData()
+
     } else if (license === 'Mozilla_Public_License_2.0') {
+        createLicense(mozillaLicenseData())
         return mozillaLicenseData()
+
     } else if (license === 'Apache_2.0') {
+        createLicense(apacheLicenseData())
         return apacheLicenseData()
+
     } else if (license === 'Boost_Software_License_1.0') {
+        createLicense(boosLicenseData())
         return boosLicenseData()
+
     } else {
+        createLicense(unlicenseLicenseData())
         return unlicenseLicenseData()
     }
 }
