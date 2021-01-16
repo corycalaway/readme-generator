@@ -1,8 +1,8 @@
-# lasdjg
+# alskjgd
 
-![badge](https://img.shields.io/badge/License-The_Unlicense-brightgreen)    
+![badge](https://img.shields.io/badge/License-GNU_LGPLv3-brightgreen)    
 ## Description
-dsaglkjda
+dsagklajsdg
 
 ## Table of Contents
 * [Installation Instructions](#installation-instructions)
@@ -12,17 +12,17 @@ dsaglkjda
 * [License Information](#license-information)
 
 ## Installation Instructions
-lkdsjg
+asdgkasdjgasd
 
 ## Usage Information
-dalkjdsa
+gasdgkljsadgas
 
 ## Contribution Guidelines
-dsaglkjd
+dgasdkljgsad
 
 ## Test Instructions
-dasgl
+gjasd
 
 ## License Information
 
-Licensed under the [The_Unlicense](LICENSE)
+Licensed under the [GNU_LGPLv3](LICENSE)
