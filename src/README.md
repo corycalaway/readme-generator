@@ -1,8 +1,8 @@
-# alskjgd
+# askdj
 
-![badge](https://img.shields.io/badge/License-GNU_LGPLv3-brightgreen)    
+![badge](https://img.shields.io/badge/License-MIT_License-brightgreen)    
 ## Description
-dsagklajsdg
+safd
 
 ## Table of Contents
 * [Installation Instructions](#installation-instructions)
@@ -12,17 +12,17 @@ dsagklajsdg
 * [License Information](#license-information)
 
 ## Installation Instructions
-asdgkasdjgasd
+asgd
 
 ## Usage Information
-gasdgkljsadgas
+asdgas
 
 ## Contribution Guidelines
-dgasdkljgsad
+dgasd
 
 ## Test Instructions
-gjasd
+dsgad
 
 ## License Information
 
-Licensed under the [GNU_LGPLv3](LICENSE)
+Licensed under the [MIT_License](LICENSE)

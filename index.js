@@ -107,6 +107,7 @@ const init = () => {
     // .then(licenseIndexData => {
     //     return licenseInfoIndex(licenseIndexData)
     // })
+   
     .then(markdownData => {
         return generateMarkdown(markdownData);
     })

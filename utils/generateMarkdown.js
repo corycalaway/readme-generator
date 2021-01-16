@@ -36,7 +36,9 @@ renderLicenseSection = license => {
     if(!license) {
         return "";
     } else if (license === 'MIT_License') {
+        
         createLicense(spdxLicenseList.MIT.licenseText)
+        
         return mitLicenseData()
 
     } else if (license === 'GNU_AGPLv3') {
