@@ -1,7 +1,10 @@
 // allows use of nodes inquirer
 const inquirer = require('inquirer')
 const generateMarkdown = require('./utils/generateMarkdown')
-const createFiles = require('./utils/createFiles')
+// const licenseInfoIndex = require('./utils/licenseIndex')
+// const createFiles = require('./utils/createFiles')
+const { createReadme, createLicense } = require('./utils/createFiles');
+// const licenseIndex = require('./utils/licenseIndex');
 // TODO: Create an array of questions for user input
 // questions to generate readme
 const questions = () => {
@@ -99,13 +102,19 @@ function writeToFile(fileName, data) {}
 // TODO: Create a function to initialize app
 const init = () => {
     questions()
+    // create license and seperate from other infromation
+    // .then(licenseIndexData => {
+    //     return licenseInfoIndex(licenseIndexData)
+    // })
     .then(markdownData => {
         return generateMarkdown(markdownData);
     })
     .then(writeData => {
-        return createFiles(writeData)
+        return createReadme(writeData)
     })    
-    
+    .then(writeLicense => {
+        return createLicense(writeLicense)
+    })
 }
 
 init();
