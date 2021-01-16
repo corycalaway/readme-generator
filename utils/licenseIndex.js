@@ -1,6 +1,5 @@
-// const fs = require('fs');
+const mitLicenseData = () => {
+    return 'hi'
+}
 
-// module.exports = (licenseIndexData) => {
-//     console.log(licenseIndexData)
-// }
-
+module.exports = mitLicenseData;
