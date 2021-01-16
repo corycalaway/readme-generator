@@ -28,9 +28,10 @@ renderLicenseSection = license => {
     if(!license) {
         return "";
     } else if (license === 'MIT_License') {
-        createLicense(license)
+        createLicense(mitLicenseData())
         return mitLicenseData()
     } else if (license === 'GNU_AGPLv3') {
+        createLicense(agplv3LicenseData())
         return agplv3LicenseData()
     } else if (license === 'GNU_GPLv3') {
         return gplv3LicenseData()
