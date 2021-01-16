@@ -1,6 +1,6 @@
 // allows use of filesystems in node
 const fs = require('fs');
-const mitLicenseData = require('./licenseIndex')
+const {mitLicenseData, agplv3LicenseData, gplv3LicenseData, lgplv3LicenseData, mozillaLicenseData, apacheLicenseData, boosLicenseData, unlicenseLicenseData} = require('./licenseIndex')
 let testingVariable = [];
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
@@ -24,24 +24,21 @@ renderLicenseSection = license => {
     if(!license) {
         return "";
     } else if (license === 'MIT_License') {
-
         return mitLicenseData()
     } else if (license === 'GNU_AGPLv3') {
-        return testing()
+        return agplv3LicenseData()
     } else if (license === 'GNU_GPLv3') {
-        return testing()
+        return gplv3LicenseData()
     } else if (license === 'GNU_LGPLv3') {
-        return testing()
+        return lgplv3LicenseData()
     } else if (license === 'Mozilla_Public_License_2.0') {
-        return testing()
+        return mozillaLicenseData()
     } else if (license === 'Apache_2.0') {
-        return testing()
+        return apacheLicenseData()
     } else if (license === 'Boost_Software_License_1.0') {
-        return testing()
-    } else if (license === 'The_Unlicense') {
-        return testing()
+        return boosLicenseData()
     } else {
-        return testing()
+        return unlicenseLicenseData()
     }
 }
 
