@@ -29,5 +29,5 @@ const unlicenseLicenseData = () => {
     return 'testgadsg'
 }
 
-
+//module.exports.testingIndex = testingIndex
 module.exports = { mitLicenseData, agplv3LicenseData, gplv3LicenseData, lgplv3LicenseData, mozillaLicenseData, apacheLicenseData, boosLicenseData, unlicenseLicenseData};

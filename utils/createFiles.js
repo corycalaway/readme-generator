@@ -1,6 +1,6 @@
 // allows use of filesystems in node
 const fs = require('fs');
-
+//const {mitLicenseData, agplv3LicenseData, gplv3LicenseData, lgplv3LicenseData, mozillaLicenseData, apacheLicenseData, boosLicenseData, unlicenseLicenseData} = require('./licenseIndex')
 // creates Readme file
 const createReadme = fileContent => {
     return new Promise((resolve, reject) => {
@@ -20,10 +20,10 @@ const createReadme = fileContent => {
     })})})
 }; 
 
-const createLicense = () => {
+const createLicense = (fileContent) => {
   return new Promise((resolve, reject) => {
       // uses data from generate markdown page as filecontent
-  fs.writeFile('./src/LICENSE', 'cake', err => {
+  fs.writeFile('./src/LICENSE', fileContent, err => {
       // if there's an error, reject the Promise and send the error to the Promise's `.catch()` method
       if (err) {
         reject(err);

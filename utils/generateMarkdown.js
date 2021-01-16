@@ -1,7 +1,10 @@
 // allows use of filesystems in node
 const fs = require('fs');
 const {mitLicenseData, agplv3LicenseData, gplv3LicenseData, lgplv3LicenseData, mozillaLicenseData, apacheLicenseData, boosLicenseData, unlicenseLicenseData} = require('./licenseIndex')
-let testingVariable = [];
+const {createReadme, createLicense} = require('./createFiles');
+
+// const testingIndex = require('./licenseIndex')
+
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 
@@ -17,13 +20,15 @@ renderLicenseBadge = license => {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {}
 
+
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 renderLicenseSection = license => {
-    
+   // const [mit, agplv3, ...therest] = testingIndex
     if(!license) {
         return "";
     } else if (license === 'MIT_License') {
+        createLicense(license)
         return mitLicenseData()
     } else if (license === 'GNU_AGPLv3') {
         return agplv3LicenseData()
@@ -117,3 +122,4 @@ ${renderLicenseSection(license)}`
 
 // create license / write maybe copy
 // create file to hold 
+
