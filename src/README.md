@@ -1,8 +1,8 @@
-# kldaj
+# gamer-portal
 
-![badge](https://img.shields.io/badge/License-GNU_LGPLv3-brightgreen)    
+![badge](https://img.shields.io/badge/License-GNU_AGPLv3-brightgreen)    
 ## Description
-dasgkljd
+jaldkgsj
 
 ## Table of Contents
 * [Installation Instructions](#installation-instructions)
@@ -12,17 +12,22 @@ dasgkljd
 * [License Information](#license-information)
 
 ## Installation Instructions
-adfalskdjga
+alskjdgl
 
 ## Usage Information
-daklgjad
+aklgjsladjg
 
 ## Contribution Guidelines
-daslkgjad
+alsdkjglkag
 
 ## Test Instructions
-dlkasgja
+aldskgjalkgjd
 
 ## License Information
 
-Licensed under the [GNU_LGPLv3](LICENSE)
+Licensed under the [GNU_AGPLv3](LICENSE)
+
+### Questions
+For further questions please reach out through the following:
+Email: cory.c.calaway@gmail.com
+GitHub: https://github.com/corycalaway/gamer-portal

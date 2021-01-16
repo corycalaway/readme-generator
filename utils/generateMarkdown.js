@@ -111,7 +111,7 @@ module.exports = (generateMarkdown) => {
     console.log(generateMarkdown)
    
    
-    const { projectTitle, projectDescription, projectInstallation, projectUsage, projectContribution, testInstructions, license} = generateMarkdown;
+    const { projectTitle, projectDescription, projectInstallation, projectUsage, projectContribution, testInstructions, license, emailData, githubData} = generateMarkdown;
     testingVariable = license
 
     renderLicenseSection(license)
@@ -143,7 +143,12 @@ ${testInstructions}
 
 ## License Information
 
-Licensed under the [${license}](LICENSE)`
+Licensed under the [${license}](LICENSE)
+
+### Questions
+For further questions please reach out through the following:
+Email: ${emailData}
+GitHub: https://github.com/${githubData}/${projectTitle}`
 }
 
 

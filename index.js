@@ -94,6 +94,28 @@ const questions = () => {
             message: 'Choose a license for your application',
             choices: ['', 'MIT_License', 'GNU_AGPLv3', 'GNU_GPLv3', 'GNU_LGPLv3', 'Mozilla_Public_License_2.0', 'Apache_2.0', 'Boost_Software_License_1.0' , 'The_Unlicense']
           },
+          {
+            type: 'input',
+            name: 'emailData',
+            message: 'What is your email addresss?',
+            validate: emailInput => {
+            if (emailInput) {
+                return true;
+            } else {
+                console.log('Please enter your email address!')
+            }
+        }},
+        {
+            type: 'input',
+            name: 'githubData',
+            message: 'What is your GitHub username?',
+            validate: githubInput => {
+            if (githubInput) {
+                return true;
+            } else {
+                console.log('Please enter your GitHub username!')
+            }
+        }}
     ])
 };
 
