@@ -103,7 +103,8 @@ module.exports = (generateMarkdown) => {
     const { projectTitle, projectDescription, projectInstallation, projectUsage, projectContribution, testInstructions, license} = generateMarkdown;
     testingVariable = license
 
-
+    renderLicenseSection(license)
+    //${renderLicenseSection(license)}
     return `# ${projectTitle}
 
 ${renderLicenseBadge(license)}    
@@ -130,7 +131,8 @@ ${projectContribution}
 ${testInstructions}
 
 ## License Information
-${renderLicenseSection(license)}`
+
+Licensed under the [${license}](LICENSE)`
 }
 
 
