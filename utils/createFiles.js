@@ -5,7 +5,7 @@ const fs = require('fs');
 const createReadme = fileContent => {
     return new Promise((resolve, reject) => {
         // uses data from generate markdown page as filecontent
-    fs.writeFile('./src/README.md', fileContent, err => {
+    fs.writeFile('./dist/README.md', fileContent, err => {
         // if there's an error, reject the Promise and send the error to the Promise's `.catch()` method
         if (err) {
           reject(err);
@@ -23,7 +23,7 @@ const createReadme = fileContent => {
 const createLicense = (fileContent) => {
   return new Promise((resolve, reject) => {
       // uses data from generate markdown page as filecontent
-  fs.writeFile('./src/LICENSE', fileContent, err => {
+  fs.writeFile('./dist/LICENSE', fileContent, err => {
       // if there's an error, reject the Promise and send the error to the Promise's `.catch()` method
       if (err) {
         reject(err);

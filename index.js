@@ -36,14 +36,7 @@ const questions = () => {
         {
             type: 'input',
             name: 'projectInstallation',
-            message: 'Provide installation instructions!',
-            validate: installationInput => {
-            if (installationInput) {
-                return true;
-            } else {
-                console.log('Please enter installation instructions!')
-            }
-        }
+            message: 'Please provide any installation instructions you would like to include in your readme!',
         },
         // usage information
         {
@@ -127,3 +120,6 @@ const init = () => {
 }
 
 init()
+
+//if(values.find(val => val === 'installation)) {console.log('true)} else { console.log('false')}
+// if (values.find( (val) => { return vall === 'installation' }))

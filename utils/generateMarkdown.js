@@ -48,6 +48,43 @@ renderLicenseSection = license => {
     }
 }
 
+
+renderSelectedContentTable = (projectInstallation, projectUsage, projectContribution, testInstructions) => {
+    let projectInstallationTable = ''
+    let projectUsageTable = ''
+    let projectContributionTable = ''
+    let testInstructionsTable = ''
+    let tableOfContentsValue = ''
+
+    if(projectInstallation) {
+        projectInstallationTable = '* [Installation Instructions](#installation-instructions)'
+        tableOfContentsValue = tableOfContentsValue + projectInstallationTable
+    } 
+
+    if(projectUsage) {
+        projectUsageTable = `
+* [Usage Information](#usage-information)`
+        tableOfContentsValue = tableOfContentsValue + projectUsageTable
+    } 
+
+    if(projectContribution) {
+        projectContributionTable = `
+* [Contribution Guidelines](#contribution-guidelines)`
+        tableOfContentsValue = tableOfContentsValue + projectContributionTable
+    } 
+
+    if(testInstructions) {
+        testInstructionsTable = `
+* [Test Instructions](#test-instructions)`
+        tableOfContentsValue = tableOfContentsValue + testInstructionsTable
+    } 
+
+
+    return tableOfContentsValue
+}
+
+//if(values.find(val => val === 'installation)) {console.log('true)} else { console.log('false')}
+// if (values.find( (val) => { return vall === 'installation' }))
 // creates the text for the readme file
 module.exports = (generateMarkdown) => {
     console.log(generateMarkdown)
@@ -55,6 +92,7 @@ module.exports = (generateMarkdown) => {
    
     const { projectTitle, projectDescription, projectInstallation, projectUsage, projectContribution, testInstructions, license, emailData, githubData} = generateMarkdown;
     testingVariable = license
+
 
     renderLicenseSection(license)
     //${renderLicenseSection(license)}
@@ -65,11 +103,9 @@ ${renderLicenseBadge(license)}
 ${projectDescription}
 
 ## Table of Contents
-* [Installation Instructions](#installation-instructions)
-* [Usage Information](#usage-information)
-* [Contribution Guidelines](#contribution-guidelines)
-* [Test Instructions](#test-instructions)
+${renderSelectedContentTable(projectInstallation, projectUsage, projectContribution, testInstructions)}
 * [License Information](#license-information)
+
 
 ## Installation Instructions
 ${projectInstallation}
