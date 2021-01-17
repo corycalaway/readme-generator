@@ -1,8 +1,8 @@
-# slkajdg
+# lajkdglk
 
-![badge](https://img.shields.io/badge/License-MIT_License-brightgreen)    
+![badge](https://img.shields.io/badge/License-GNU_LGPLv3-brightgreen)    
 ## Description
-sakldgj
+lakgjdsklagj
 
 ## Table of Contents
 * [Installation Instructions](#installation-instructions)
@@ -11,25 +11,23 @@ sakldgj
 * [Test Instructions](#test-instructions)
 * [License Information](#license-information)
 
-
 ## Installation Instructions
-sakdjg
+lkajgdslkjga
 
 ## Usage Information
-sadlkjg
+alksdgjlasdjg
 
 ## Contribution Guidelines
-asldkgj
+laksdjgklasjd
 
 ## Test Instructions
-asdkjgl
-
+dlakgjsdlkgjasdljg
 
 ## License Information
 
-Licensed under the [MIT_License](LICENSE)
+Licensed under the [GNU_LGPLv3](LICENSE)
 
 ### Questions
 - For further questions please reach out through the following:
-    - Email: lkajsg
-    - GitHub: https://github.com/alkjsdg/slkajdg
+    - Email: sadgkasjdgl
+    - GitHub: https://github.com/alksdjglasjdg/lajkdglk

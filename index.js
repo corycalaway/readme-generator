@@ -43,39 +43,18 @@ const questions = () => {
             type: 'input',
             name: 'projectUsage',
             message: 'Provide information on how this project is used!',
-            validate: usageInput => {
-            if (usageInput) {
-                return true;
-            } else {
-                console.log('Please enter information on how this project is used!')
-            }
-        }
         },
         // contribution guidelines
         {
             type: 'input',
             name: 'projectContribution',
             message: 'Provide information on how to contribute to this project!',
-            validate: contributionInput => {
-            if (contributionInput) {
-                return true;
-            } else {
-                console.log('Please enter information on how to contribute to this project!')
-            }
-        }
         },
         // test instructions
         {
             type: 'input',
             name: 'testInstructions',
             message: 'Provide information on test instructions!',
-            validate: testInput => {
-            if (testInput) {
-                return true;
-            } else {
-                console.log('Please enter information on test instructions!')
-            }
-        }
         },
         {
             type: 'list',
