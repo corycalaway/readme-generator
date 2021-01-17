@@ -91,11 +91,12 @@ renderSelectedContentTable = (
 
 // dynamically create installation seciont
 
-renderProjectSections = (projectInstallation, projectUsage, projectContribution, testInstructions) => {
+renderProjectSections = (projectInstallation, projectUsage, projectContribution, testInstructions, license) => {
   let projectInstallationSection = "";
   let projectUsageSection = "";
   let projectContributionSection = ""
   let testInstructionsSection = ""
+  let licenseSection = "";
   let projectSections = "";
 
 
@@ -135,7 +136,13 @@ ${testInstructions}
 projectSections = projectSections + testInstructionsSection
   }
 
-  
+  if (license) {
+    licenseSection = `## License Information
+Licensed under the [${license}](LICENSE)
+`;
+
+projectSections = projectSections + licenseSection
+  }
 
   return projectSections;
 };
@@ -175,11 +182,7 @@ ${renderSelectedContentTable(
   license
 )}
 
-${renderProjectSections(projectInstallation, projectUsage, projectContribution, testInstructions)}
-## License Information
-
-Licensed under the [${license}](LICENSE)
-
+${renderProjectSections(projectInstallation, projectUsage, projectContribution, testInstructions, license)}
 ### Questions
 - For further questions please reach out through the following:
     - Email: ${emailData}
