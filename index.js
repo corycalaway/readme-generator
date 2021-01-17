@@ -1,12 +1,8 @@
 // allows use of nodes inquirer
 const inquirer = require('inquirer')
 const generateMarkdown = require('./utils/generateMarkdown')
-//const createReadme = require('./utils/createFiles');
-// const licenseInfoIndex = require('./utils/licenseIndex')
-// const createFiles = require('./utils/createFiles')
- const { createReadme, createLicense } = require('./utils/createFiles');
-// const licenseIndex = require('./utils/licenseIndex');
-// TODO: Create an array of questions for user input
+const { createReadme, createLicense } = require('./utils/createFiles');
+
 // questions to generate readme
 const questions = () => {
     return inquirer.prompt([
@@ -119,43 +115,15 @@ const questions = () => {
     ])
 };
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
+// initialize app
 const init = () => {
     questions()
-    // create license and seperate from other infromation
-    // .then(licenseIndexData => {
-    //     return licenseInfoIndex(licenseIndexData)
-    // })
-   
     .then(markdownData => {
         return generateMarkdown(markdownData);
     })
     .then(writeData => {
         return createReadme(writeData)
     })    
-    // .then(writeLicense => {
-    //     return createLicense(writeLicense)
-    // })
 }
 
 init()
-//createLicense('hiyou')
-// Function call to initialize app
-// init()
-//     .then(pageReadme => {
-//         return createReadme(pageReadme)
-//     })
-
-
-// license for github based on username and repo
-// https://img.shields.io/github/license/corycalaway/readme-generator
-
-
-// create a LICENSE form to input license information based upon selection of license to be used
-// create a readme with information
-
-//https://img.shields.io/badge/https://img.shields.io/badge/license-MIT-brightgreen
-//https://img.shields.io/badge/License-MIT-brightgreen

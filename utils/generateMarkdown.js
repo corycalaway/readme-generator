@@ -1,5 +1,4 @@
 const fs = require('fs');
-const {mitLicenseData, agplv3LicenseData, gplv3LicenseData, lgplv3LicenseData, mozillaLicenseData, apacheLicenseData, boosLicenseData, unlicenseLicenseData} = require('./licenseIndex')
 const {createReadme, createLicense} = require('./createFiles');
 const spdxLicenseList = require('spdx-license-list/full');
 const agplv3License = require('spdx-license-list/licenses/AGPL-3.0-or-later')
@@ -24,37 +23,28 @@ renderLicenseSection = license => {
     if(!license) {
         return "";
     } else if (license === 'MIT_License') {
-        
         createLicense(spdxLicenseList.MIT.licenseText)
-        return mitLicenseData()
 
     } else if (license === 'GNU_AGPLv3') {
        createLicense(agplv3License.licenseText)
-        return agplv3LicenseData()
 
     } else if (license === 'GNU_GPLv3') {
         createLicense(gplv3License.licenseText)
-        return gplv3LicenseData()
 
     } else if (license === 'GNU_LGPLv3') {
         createLicense(lgplv3License.licenseText)
-        return lgplv3LicenseData()
 
     } else if (license === 'Mozilla_Public_License_2.0') {
         createLicense(mplLicense.licenseText)
-        return mozillaLicenseData()
 
     } else if (license === 'Apache_2.0') {
         createLicense(apacheLicense.licenseText)
-        return apacheLicenseData()
 
     } else if (license === 'Boost_Software_License_1.0') {
         createLicense(boostLicense.licenseText)
-        return boosLicenseData()
 
     } else {
         createLicense(spdxLicenseList.Unlicense.licenseText)
-        return unlicenseLicenseData()
     }
 }
 
@@ -98,7 +88,7 @@ ${testInstructions}
 Licensed under the [${license}](LICENSE)
 
 ### Questions
-For further questions please reach out through the following:
-Email: ${emailData}
-GitHub: https://github.com/${githubData}/${projectTitle}`
+- For further questions please reach out through the following:
+    - Email: ${emailData}
+    - GitHub: https://github.com/${githubData}/${projectTitle}`
 }
