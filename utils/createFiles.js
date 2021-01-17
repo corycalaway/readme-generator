@@ -1,6 +1,6 @@
 // allows use of filesystems in node
 const fs = require('fs');
-//const {mitLicenseData, agplv3LicenseData, gplv3LicenseData, lgplv3LicenseData, mozillaLicenseData, apacheLicenseData, boosLicenseData, unlicenseLicenseData} = require('./licenseIndex')
+
 // creates Readme file
 const createReadme = fileContent => {
     return new Promise((resolve, reject) => {

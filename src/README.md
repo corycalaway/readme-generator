@@ -1,8 +1,8 @@
-# gamer-portal
+# lasjdg
 
-![badge](https://img.shields.io/badge/License-GNU_AGPLv3-brightgreen)    
+![badge](https://img.shields.io/badge/License-MIT_License-brightgreen)    
 ## Description
-jaldkgsj
+aslkgdjalkgjdsla
 
 ## Table of Contents
 * [Installation Instructions](#installation-instructions)
@@ -12,22 +12,22 @@ jaldkgsj
 * [License Information](#license-information)
 
 ## Installation Instructions
-alskjdgl
+alkjdgslasjdg
 
 ## Usage Information
-aklgjsladjg
+asldgkjsd
 
 ## Contribution Guidelines
-alsdkjglkag
+alkjdsga
 
 ## Test Instructions
-aldskgjalkgjd
+aslgjjasdlkjgl
 
 ## License Information
 
-Licensed under the [GNU_AGPLv3](LICENSE)
+Licensed under the [MIT_License](LICENSE)
 
 ### Questions
 For further questions please reach out through the following:
-Email: cory.c.calaway@gmail.com
-GitHub: https://github.com/corycalaway/gamer-portal
+Email: asdgjlkjads
+GitHub: https://github.com/agldkjg/lasjdg
