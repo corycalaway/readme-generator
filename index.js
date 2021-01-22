@@ -56,6 +56,7 @@ const questions = () => {
             name: 'testInstructions',
             message: 'Provide information on test instructions!',
         },
+        // selecting license
         {
             type: 'list',
             name: 'license',
@@ -99,6 +100,3 @@ const init = () => {
 }
 
 init()
-
-//if(values.find(val => val === 'installation)) {console.log('true)} else { console.log('false')}
-// if (values.find( (val) => { return vall === 'installation' }))
